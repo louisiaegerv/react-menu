@@ -1,30 +1,37 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+import menu from './data.js'
+
 import Navbar from './components/Navbar'
 import Error from './components/Error'
 import Home from './components/Home'
 import About from './components/About'
+import MenuItem from './components/MenuItem'
 
 const App = () => {
   return (
-    <div>
+    <>
       <Router>
         <Navbar />
-        <div className='container'>
+        <main className='container'>
           <Switch>
             <Route exact path='/'>
-              <Home />
+              <Home menu={menu} />
             </Route>
             <Route path='/about'>
               <About />
+            </Route>
+            <Route path='/:itemID'>
+              <MenuItem menu={menu} />
             </Route>
             <Route path='*'>
               <Error />
             </Route>
           </Switch>
-        </div>
+        </main>
       </Router>
-    </div>
+    </>
   )
 }
 

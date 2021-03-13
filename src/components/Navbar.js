@@ -6,12 +6,12 @@ const Navbar = () => {
     <nav>
       <Link to='/'>
         <p className='nav-title'>
-          <span className='nav-title-icon'>⚛️</span>
-          React Starter Template
+          <span className='nav-title-icon'>🍽</span>
+          React Menu
         </p>
       </Link>
       <div className='nav-links'>
-        <Link to='/'>Home</Link>
+        <Link to='/'>Menu</Link>
         <Link to='/about'>About</Link>
       </div>
     </nav>
