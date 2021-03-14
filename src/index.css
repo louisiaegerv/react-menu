@@ -224,7 +224,8 @@ nav a {
   transition: var(--transition);
   border-radius: var(--radius);
 }
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn-active {
   background: var(--clr-primary-5);
   color: var(--clr-white);
 }

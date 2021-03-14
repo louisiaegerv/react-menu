@@ -5,7 +5,7 @@ import menu from './data.js'
 
 import Navbar from './components/Navbar'
 import Error from './components/Error'
-import Home from './components/Home'
+import Menu from './components/Menu'
 import About from './components/About'
 import MenuItem from './components/MenuItem'
 
@@ -17,7 +17,7 @@ const App = () => {
         <main className='container'>
           <Switch>
             <Route exact path='/'>
-              <Home menu={menu} />
+              <Menu menu={menu} />
             </Route>
             <Route path='/about'>
               <About />

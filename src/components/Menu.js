@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Home = ({ menu }) => {
-  const allCategories = ['all', ...new Set(menu.map((item) => item.category))]
+const Menu = ({ menu }) => {
   const [menuItems, setMenuItems] = useState(menu)
-  const [categories, setCategories] = useState(allCategories)
+  const [categories, setCategories] = useState([
+    'all',
+    ...new Set(menu.map((item) => item.category)),
+  ])
+  const [activeCategory, setActiveCategory] = useState('all')
 
   const filterItems = (filterText) => {
     if (filterText.toLocaleLowerCase() === 'all') {
@@ -14,6 +17,7 @@ const Home = ({ menu }) => {
         menu.filter((item) => item.category === filterText.toLocaleLowerCase())
       )
     }
+    setActiveCategory(filterText)
   }
 
   return (
@@ -27,7 +31,9 @@ const Home = ({ menu }) => {
           {categories.map((category) => {
             return (
               <button
-                className='btn filter-btn'
+                className={`btn filter-btn ${
+                  category === activeCategory && 'filter-btn-active'
+                }`}
                 onClick={() => filterItems(category)}
               >
                 {category}
@@ -59,4 +65,4 @@ const Home = ({ menu }) => {
   )
 }
 
-export default Home
+export default Menu
