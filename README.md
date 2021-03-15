@@ -1,16 +1,16 @@
-# React Starter Template ⚛️
+# React Menu ⚛️
 
-[🔥 View it live here 🔥](https://react-starter-template-ljfiv.netlify.app/)
+[🔥 View it live here 🔥](https://react-menu-ljfiv.netlify.app/)
 
-A React web app template to start coding in React without all the extra fluff from the "create-react-app" starter project.
-
-Also includes some starter CSS to quickly throw together simple MVPs.
-
-Clone and start coding in React today.
+A digital restaurant menu web app made with React
 
 Features include:
 
+- Dynamic category filters from data
+- CSS Grid layout for responsive design
+- Animated gradient navbar
 - Routing with React Router
+  - Product detail page routing
   - Error handling for invalid pages
 
-[![](https://github.com/louisiaegerv/Project-Images/blob/master/React-Starter-Template.png?raw=true)](https://react-starter-template-ljfiv.netlify.app/)
+[![](https://github.com/louisiaegerv/Project-Images/blob/master/React-menu-image.png?raw=true)](https://react-menu-ljfiv.netlify.app/)
