@@ -2,7 +2,7 @@
 
 [🔥 View it live here 🔥](https://react-menu-ljfiv.netlify.app/)
 
-A digital restaurant menu web app made with React
+A restaurant menu web app made with React
 
 Features include:
 
